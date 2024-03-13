@@ -1,11 +1,13 @@
-import "./App.css";
+import { ChakraProvider, Box, Text } from "@chakra-ui/react";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <div>Nima Portfolio</div>
-    </>
+    <ChakraProvider>
+      <Box>
+        <Text fontFamily="body">Body Text with Raleway font</Text>
+      </Box>
+    </ChakraProvider>
   );
-}
+};
 
 export default App;
