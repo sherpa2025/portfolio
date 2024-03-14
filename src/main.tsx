@@ -5,7 +5,6 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { Provider } from "react-redux";
 import store from "./redux/store/store.ts";
-import "./index.css";
 
 const fonts = {
   body: "'Raleway', sans-serif",

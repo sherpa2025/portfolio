@@ -4,7 +4,9 @@ import Github from "../../assets/github.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Email from "../../assets/email.svg";
 import mapPin from "../../assets/pin.svg";
+import { Layout } from "../../components/layout";
 function Contact() {
+  Layout(false);
   return (
     <Flex alignItems="center" justifyContent="center" h="100vh">
       <Flex

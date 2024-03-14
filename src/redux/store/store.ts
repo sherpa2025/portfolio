@@ -1,10 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import navbarReducer from "../reducers/slices/navbar";
+import cardReducer from "../reducers/slices/cardSlice";
 
 const store = configureStore({
   reducer: {
     navbar: navbarReducer,
-    // Add other reducers if you have them
+    cards: cardReducer,
   },
 });
 

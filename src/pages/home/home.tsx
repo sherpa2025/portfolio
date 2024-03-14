@@ -2,8 +2,10 @@ import { Box, Flex, Image } from "@chakra-ui/react";
 import Type from "./type";
 import ProfilePhoto from "../../assets/Programming-amico.png";
 import style from "./home.module.css";
+import { Layout } from "../../components/layout";
 
 function Home() {
+  Layout(false);
   return (
     <Flex alignItems="center" justifyContent="center" h="100vh">
       <Flex
