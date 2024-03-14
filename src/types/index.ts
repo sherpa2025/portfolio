@@ -5,4 +5,11 @@ export interface CardData {
   title: string;
   description: string;
   githubLink: string;
+  tools: string[];
+}
+
+export interface ProjectDrawerProps {
+  isOpen: boolean;
+  onClose: () => void;
+  project: CardData | null;
 }
