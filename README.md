@@ -2,7 +2,7 @@
 
 ## Website
 
-[Link to Portfolio](https://fantastic-squirrel-072cab.netlify.app/)
+[Link to Portfolio](https://nsherpaportfolio.netlify.app/)
 
 ## Description
 
