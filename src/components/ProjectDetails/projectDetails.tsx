@@ -48,7 +48,7 @@ const ProjectDetails: React.FC<ProjectDrawerProps> = ({
     ))}
   </ul>
   <hr className={style.line} />
-
+  <div className={style.image}>
   {/* Conditionally render the GitHub icon link */}
   {project.githubLink && (
     <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
@@ -62,6 +62,7 @@ const ProjectDetails: React.FC<ProjectDrawerProps> = ({
       <Image src={Demo} alt="Live Demo" className={style["footer-image"]} />
     </a>
   )}
+    </div>
 </DrawerBody>
 
       </DrawerContent>
