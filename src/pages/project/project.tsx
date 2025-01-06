@@ -33,6 +33,20 @@ function Project() {
     const projectData: CardData[] = [
       {
         imageSrc: Course1,
+        title: "Tenaya Fit Recommendation System",
+        description:
+          "A multi-step shoe size recommendation app designed to improve the online shopping experience. This intuitive and responsive application, built with React and Node.js, allows users to select shoe brands, models, and sizes seamlessly. It features sophisticated algorithms for size conversion across various size types, ensuring accurate and personalized recommendations. Collaboration with stakeholders ensured the app aligned with business needs, enhancing user satisfaction and engagement.",
+        githubLink: "https://trango.com/pages/test",
+        tools: [
+          "React",
+          "HTML",
+          "CSS",
+          "Node.js",
+          "JavaScript",
+        ],
+      },
+      {
+        imageSrc: Course1,
         title: "Course Planner",
         description:
           "A digital tool designed to assist Computer Science students of UCDenver in creating, organizing, and managing educational courses.",
