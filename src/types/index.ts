@@ -4,8 +4,8 @@ export interface CardData {
   imageSrc: string;
   title: string;
   description: string;
-  githubLink: string;
-  liveDemo: string;
+  githubLink?: string;
+  liveDemo?: string;
   tools: string[];
 }
 
