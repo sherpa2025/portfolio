@@ -70,6 +70,7 @@ function Project() {
         description:
           "A digital tool designed to help users manage tasks and stay organized. It allows users to create lists of tasks, edit the tasks, and mark tasks as completed when they're done.",
         githubLink: "https://github.com/satshree/task-manager-todo",
+        liveDemo: "https://task-manager-todo-app.netlify.app/",
         tools: ["React", "Node.js", "HTML", "CSS", "TypeScript"],
       },
       {
