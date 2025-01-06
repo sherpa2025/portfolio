@@ -26,3 +26,4 @@ This is a personal portfolio website showcasing my projects and contact details.
 # Credit:
 
 <a href="https://storyset.com/web">Web illustrations by Storyset</a>
+<a href="https://www.flaticon.com/free-icons/demo" title="demo icons">Demo icons created by Freepik - Flaticon</a>
