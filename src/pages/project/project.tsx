@@ -116,21 +116,21 @@ function Project() {
           </CardBody>
           <Divider />
           <CardFooter>
-            <a href={data.githubLink} target="_blank">
-              <Image
-                src={Github}
-                alt="GitHub"
-                className={style["footer-image"]}
-              />
-            </a>
+            {/* Conditionally render GitHub icon if githubLink exists */}
+            {data.githubLink && (
+              <a href={data.githubLink} target="_blank" rel="noopener noreferrer">
+                <Image src={Github} alt="GitHub" className={style["footer-image"]} />
+              </a>
+            )}
+          
+            {/* Conditionally render Live Demo icon if liveDemo exists */}
+            {data.liveDemo && (
               <a href={data.liveDemo} target="_blank" rel="noopener noreferrer">
-    <Image
-      src={Demo}
-      alt="Live Demo"
-      className={style["footer-image"]}
-    />
-  </a>
+                <Image src={Demo} alt="Live Demo" className={style["footer-image"]} />
+              </a>
+            )}
           </CardFooter>
+
         </Card>
       ))}
       <ProjectDetails
