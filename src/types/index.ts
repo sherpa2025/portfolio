@@ -5,6 +5,7 @@ export interface CardData {
   title: string;
   description: string;
   githubLink: string;
+  liveDemo: string;
   tools: string[];
 }
 
