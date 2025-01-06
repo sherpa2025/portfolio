@@ -14,6 +14,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux/store/store";
 import { setCards } from "../../redux/reducers/slices/cardSlice";
 import { CardData } from "../../types";
+import Demo from "../../assets/demo.png";
+import tenaya from "../../assets/tenaya-logo.png";
 import Course1 from "../../assets/course1.jpg";
 import TodoApp from "../../assets/todo.png";
 import Portfolio from "../../assets/portfolio.png";
@@ -32,11 +34,11 @@ function Project() {
   useEffect(() => {
     const projectData: CardData[] = [
       {
-        imageSrc: Course1,
+        imageSrc: tenaya,
         title: "Tenaya Fit Recommendation System",
         description:
           "A multi-step shoe size recommendation app designed to improve the online shopping experience. This intuitive and responsive application, built with React and Node.js, allows users to select shoe brands, models, and sizes seamlessly. It features sophisticated algorithms for size conversion across various size types, ensuring accurate and personalized recommendations. Collaboration with stakeholders ensured the app aligned with business needs, enhancing user satisfaction and engagement.",
-        githubLink: "https://trango.com/pages/test",
+        liveDemo: "https://trango.com/pages/test",
         tools: [
           "React",
           "HTML",
@@ -121,6 +123,13 @@ function Project() {
                 className={style["footer-image"]}
               />
             </a>
+              <a href={data.liveDemo} target="_blank" rel="noopener noreferrer">
+    <Image
+      src={Demo}
+      alt="Live Demo"
+      className={style["footer-image"]}
+    />
+  </a>
           </CardFooter>
         </Card>
       ))}
