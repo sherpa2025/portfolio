@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {
-  Flex,
+  Grid,
   Stack,
   Heading,
   Text,
@@ -95,24 +95,22 @@ function Project() {
   };
 
   return (
-    <Flex
-      flexWrap={{ base: "wrap", md: "nowrap" }}
-      justifyContent={{ base: "center", md: "space-between" }}
-    >
+    <Grid className={style.gridContainer}>
       {cards.map((data, index) => (
         <Card
           key={index}
-          maxW="sm"
-          mb={{ base: "4", md: "0" }}
-          bg="gray.100"
-          m={5}
+          className={style.projectCard}
           onClick={() => handleProjectClick(data)}
         >
           <CardBody className={style["body-image"]}>
             <Image src={data.imageSrc} alt={data.title} borderRadius="lg" />
-            <Stack mt="6" spacing="3">
-              <Heading size="md">{data.title}</Heading>
-              <Text>{data.description}</Text>
+            <Stack mt="4" spacing="2">
+              <Heading size="md" className={style.projectCardTitle}>
+                {data.title}
+              </Heading>
+              <Text className={style.projectCardDescription}>
+                {data.description}
+              </Text>
             </Stack>
           </CardBody>
           <Divider />
@@ -139,7 +137,7 @@ function Project() {
         onClose={handleCloseDrawer}
         project={selectedProject}
       />
-    </Flex>
+    </Grid>
   );
 }
 

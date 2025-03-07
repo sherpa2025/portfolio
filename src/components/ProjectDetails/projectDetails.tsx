@@ -29,42 +29,55 @@ const ProjectDetails: React.FC<ProjectDrawerProps> = ({
           <Image src={Close} onClick={onClose} />
         </DrawerHeader>
         <DrawerBody>
-  <div className={style["project-image"]}>
-    <Image
-      src={project.imageSrc}
-      alt={project.title}
-      borderRadius="lg"
-    />
-  </div>
-  <Text>
-    <strong>Description: </strong> {project.description}
-  </Text>
-  <Text mt="4" fontWeight="bold">
-    Tools:
-  </Text>
-  <ul>
-    {project.tools.map((tool, index) => (
-      <li key={index}>{tool}</li>
-    ))}
-  </ul>
-  <hr className={style.line} />
-  <div className={style.image}>
-  {/* Conditionally render the GitHub icon link */}
-  {project.githubLink && (
-    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-      <Image src={Github} alt="GitHub" className={style["footer-image"]} />
-    </a>
-  )}
+          <div className={style["project-image"]}>
+            <Image
+              src={project.imageSrc}
+              alt={project.title}
+              borderRadius="lg"
+            />
+          </div>
+          <Text>
+            <strong>Description: </strong> {project.description}
+          </Text>
+          <Text mt="2" fontWeight="bolder">
+            Tools:
+          </Text>
+          <Text ml="10" fontWeight="bold">
+            {project.tools.join(" • ")}
+          </Text>
+          <hr className={style.line} />
+          <div className={style.image}>
+            {/* Conditionally render the GitHub icon link */}
+            {project.githubLink && (
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={Github}
+                  alt="GitHub"
+                  className={style["footer-image"]}
+                />
+              </a>
+            )}
 
-  {/* Conditionally render the Live Demo icon link */}
-  {project.liveDemo && (
-    <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
-      <Image src={Demo} alt="Live Demo" className={style["footer-image"]} />
-    </a>
-  )}
-    </div>
-</DrawerBody>
-
+            {/* Conditionally render the Live Demo icon link */}
+            {project.liveDemo && (
+              <a
+                href={project.liveDemo}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={Demo}
+                  alt="Live Demo"
+                  className={style["footer-image"]}
+                />
+              </a>
+            )}
+          </div>
+        </DrawerBody>
       </DrawerContent>
     </Drawer>
   );
