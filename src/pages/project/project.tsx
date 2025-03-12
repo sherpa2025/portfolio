@@ -38,7 +38,7 @@ function Project() {
         title: "Tenaya Fit Recommendation System",
         description:
           "A multi-step shoe size recommendation app designed to improve the online shopping experience. This intuitive and responsive application, built with React and Node.js, allows users to select shoe brands, models, and sizes seamlessly. It features sophisticated algorithms for size conversion across various size types, ensuring accurate and personalized recommendations. Collaboration with stakeholders ensured the app aligned with business needs, enhancing user satisfaction and engagement.",
-        liveDemo: "https://trango.com/pages/test",
+        liveDemo: "https://tenaya-shoe.netlify.app/",
         tools: [
           "React",
           "HTML",
