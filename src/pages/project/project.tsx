@@ -16,6 +16,7 @@ import { setCards } from "../../redux/reducers/slices/cardSlice";
 import { CardData } from "../../types";
 import Demo from "../../assets/demo.png";
 import tenaya from "../../assets/tenaya-logo.png";
+import SpringBoot from "../../assets/SpringBoot.jpg";
 import Course1 from "../../assets/course1.jpg";
 import TodoApp from "../../assets/todo.png";
 import Portfolio from "../../assets/portfolio.png";
@@ -65,11 +66,11 @@ function Project() {
         ],
       },
       {
-        imageSrc: Course1,
+        imageSrc: SpringBoot,
         title: "Role-Based User Management",
         description:
           "Spring Boot Microservice for Role-Based User Management is a secure microservice enabling user authentication and authorization with JWT-based stateless authentication. It features role-based access control for ADMIN and USER roles, BCrypt password encryption, and a custom JWT filter to protect API endpoints across services.",
-        githubLink: "https://github.com/sherpa2025/course-dragon",
+        githubLink: "https://github.com/sherpa2025/Capstone",
         tools: [
           "Java", "Spring Boot",
           "React",
@@ -83,10 +84,11 @@ function Project() {
       },
       {
         imageSrc: TodoApp,
-        title: "Todo Application",
+        title: "Social Media Demo Dashboard",
         description:
-          "A digital tool designed to help users manage tasks and stay organized. It allows users to create lists of tasks, edit the tasks, and mark tasks as completed when they're done.",
-        githubLink: "https://github.com/sherpa2025/Capstone",
+          "A Social Media Dashboard frontend project that visualizes user metrics and activity trends in an interactive UI. Built with modern web technologies, it features charts, notifications, and a responsive layout for real-time insights.",
+        githubLink: "https://github.com/sherpa2025/social-media-dashboard",
+        liveDemo: "https://social-media-dashboard-three-zeta.vercel.app/",
         tools: [ "React", "Node.js", "HTML", "CSS", "TypeScript"],
       },
       {
