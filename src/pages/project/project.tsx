@@ -65,13 +65,29 @@ function Project() {
         ],
       },
       {
+        imageSrc: Course1,
+        title: "Role-Based User Management",
+        description:
+          "Spring Boot Microservice for Role-Based User Management is a secure microservice enabling user authentication and authorization with JWT-based stateless authentication. It features role-based access control for ADMIN and USER roles, BCrypt password encryption, and a custom JWT filter to protect API endpoints across services.",
+        githubLink: "https://github.com/sherpa2025/course-dragon",
+        tools: [
+          "Java", "Spring Boot",
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "HTML",
+          "CSS",
+          "JavaScript",
+        ],
+      },
+      {
         imageSrc: TodoApp,
         title: "Todo Application",
         description:
           "A digital tool designed to help users manage tasks and stay organized. It allows users to create lists of tasks, edit the tasks, and mark tasks as completed when they're done.",
-        githubLink: "https://github.com/satshree/task-manager-todo",
-        liveDemo: "https://task-manager-todo-app.netlify.app/",
-        tools: ["React", "Node.js", "HTML", "CSS", "TypeScript"],
+        githubLink: "https://github.com/sherpa2025/Capstone",
+        tools: [ "React", "Node.js", "HTML", "CSS", "TypeScript"],
       },
       {
         imageSrc: Portfolio,
